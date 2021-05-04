@@ -1,0 +1,31 @@
+*{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+legend{
+  border: 1px solid rgb(143, 115, 243);
+  padding: 10px;
+  border-radius: 10px;
+  background-color:  rgb(200, 191, 231);
+}
+fieldset{
+  width:350px;
+  height: 150px;
+  padding: 10px;
+  border-radius: 10px;
+  border-style: double;
+  margin: 0 auto;
+}
+.submit{
+  text-align: center;
+}
+input[type=button]{
+  width: 150px;
+  color: white;
+  border-radius: 10px;
+  background-color:rgb(72, 72, 110);
+  padding: 10px;
+}
+
+input[type=button]:hover{
+  opacity: 50%;
+}

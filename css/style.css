@@ -1,0 +1,299 @@
+body{
+  font-family: "proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
+  background-color: black;
+  letter-spacing: 1px;
+}
+.wrapper{
+  margin: auto;
+  background-color: white;
+  width: 100%;
+  min-height: 800px;
+  
+}
+
+.main-wrapper{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px,1fr));
+}
+
+iframe{
+  width: 400px;
+  height: 400px;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Main picture and background - after the nav */
+.main{
+background-image: url("../images/ferdinand-stohr-NFs6dRTBgaM-unsplash.jpg");
+background-repeat: no-repeat;
+background-size:cover;
+background-position: top left;
+}
+.pic-shadow{
+  box-shadow: 20px 20px;
+}
+.pic-shadow-small{
+  box-shadow: 10px 10px;
+}
+
+[id*="blog"]{
+  text-decoration: none;
+}
+
+li{
+  padding-bottom: 10px;
+  padding-top: 20px;
+  list-style:square;
+  font-size: 14px;
+
+
+}
+
+li a:visited{
+  color:black;
+}
+li a:link{
+  color:black;
+}
+
+li a:hover {
+  
+  padding-bottom: 10px;
+  padding-top: 10px;
+  font-size: 15px;
+  color: teal;
+}
+
+.resume-background{
+  background-color:rgb(211, 205, 233, 80%);
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.pic-background{
+  width: 100%;
+  height: 450px;
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: top left;
+  background-color:rgb(200, 191, 231) ;
+}
+
+.pic-pdf{
+  width: 16px;
+  height: 16px;
+
+}
+.card-box{
+  background-color:rgb(39,40,34) ;
+  width: 600px;
+  height: 150px;
+  vertical-align: middle;
+  margin-top: 30%;
+  margin-left: 0;
+  padding: 10px;  
+}
+
+
+
+article{
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+section{
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+p{
+  line-height: 1.8;
+  padding: 10px;
+}
+li{
+  padding: 5px;
+}
+h1{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 3em;
+  color:teal;
+  font-weight:lighter; 
+  border-bottom: 1px solid #cccccc;
+  margin: 10px;
+  padding: 10px;
+  text-shadow: 2px 2px 2px #444242;
+}
+h1.name-card{
+  text-shadow: none;
+  font-size: 2em;
+}
+
+h2{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color:white;
+  font-weight: lighter;
+  margin: 10px;
+  padding: 10px;
+}
+
+h2.name-card{
+  font-size: 1.4em;
+}
+
+h3{
+  color:teal;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 2em;
+  font-weight: lighter;
+  /*margin: 10px;*/
+  /*padding: 10px;*/
+}
+
+h4{
+  font-family: 'Courier New', Courier, monospace;
+
+}
+
+.blog-thumbnail{
+  background: rgb(250, 236, 250);
+  margin: auto;
+  text-align: center;
+}
+
+img.img-blog:hover{
+  opacity: 50%;
+
+}
+blockquote {
+  float: right;
+  width: 275px;
+  font-size: 130%;
+  font-style: italic;
+  font-family: Georgia, Times, serif;
+  margin: 0px 0px 10px 10px;
+  padding: 10px;
+  border-top: 1px solid #665544;
+  border-bottom: 1px solid #665544;}
+
+
+.align-right {
+  text-align: right;
+  padding: 10px;
+  margin-right: 20px;
+}
+
+.align-left {
+  text-align: left;
+  padding: 10px;
+  margin-right: 20px;
+}
+
+.align-center{
+  text-align: center;
+}
+
+
+footer{
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  background:  rgb(72, 72, 110);
+  color:white;
+}
+
+/* Image sizes */
+.pic-small{
+  width: 200px;
+  height: 200px;
+}
+
+.pic-medium{
+  height: 300px;
+  width: 220px;
+  width: auto;
+  max-height: 100%;
+}
+
+.pic-small-landscape{
+  width: 290px;
+  height: 200px;
+}
+
+.pic-slide{
+  width:100%;
+}
+.pic-responsive{
+  max-width: 100%;
+  height: auto;
+}
+
+.pic-medium-landscape{
+  width:800px;
+  height: 280px;
+  max-width: 100%;
+  height: auto;
+}
+
+.pic-icon{
+  width: 40px;
+  height: 40px;
+  margin: auto;
+  padding: 5px;
+}
+
+/* End image sizes */
+
+
+/* These rules are used for the blog pic */
+/* I copied this from w3schools.org */
+figure.polaroid {
+  width: 300px;
+  padding: 10px 10px 20px 10px;
+  border: 1px solid #BFBFBF;
+  background-color: white;
+  box-shadow: 10px 10px 5px #aaaaaa;
+}
+
+figure.rotate_right {
+  transform: rotate(7deg);
+}
+
+figure.rotate_left {
+  transform: rotate(-8deg);
+}
+/* End blog pictures */
+
+
+a.email{
+  border-radius: 30px;
+  background-color: rgb(139, 72, 150, 50%);
+ 
+  text-decoration: none;
+  padding: 15px;
+  color:rgb(72, 72, 110);
+
+}
+
+/* This adjust the business card in the index.html page to make it smaller when screen is 600px*/
+@media only screen and (max-width: 600px) {
+  .card-box{
+    width: 300px;
+    height: 200px;
+    margin-top: 0;
+  }
+
+  h2.name-card{
+    font-size: 1em;
+  }
+
+  h1.name-card{
+    text-shadow: none;
+    font-size: 1.4em;
+  }
+}
+/* End main picture */
+
+
+

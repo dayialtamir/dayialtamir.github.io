@@ -1,0 +1,78 @@
+body{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: rgb(198, 195, 211);
+}
+
+fieldset {
+  min-width: 30%;
+  max-width: 600px;
+  border: 1px solid #dcdcdc;
+  border-radius: 10px;
+  padding: 20px;
+  margin: auto;
+  background-color: whitesmoke;
+}
+
+legend {
+  background-color:rgb(175, 170, 199)/* #efefef*/;
+
+  border: 1px solid #dcdcdc;
+  border-radius: 10px;
+  padding: 10px 20px;
+  text-align: left;
+  /*text-transform: uppercase;*/
+  }
+
+input[type=text]{
+  min-width:350px;
+  border-radius: 5px;
+  padding: 5px 5px 5px 5px;
+  border: 1px solid #dcdcdc;
+}
+
+.label-form{
+  display: block;
+  font-size: 12px;
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+
+.div-radio-check{
+  padding-top: 10px;
+  font-size: 12px;
+}
+  
+input[type=text]:invalid{
+  border: 1px solid red;
+}
+
+input[type=text]:valid{
+  border: 1px solid green;
+}
+
+input[type=text]:focus{
+  
+box-shadow: 1px 1px 3px blue;
+  
+}
+
+input[type=submit]{
+  width: 150px;
+  color: white;
+  border-radius: 10px;
+  background-color:rgb(72, 72, 110);
+  padding: 10px;
+  font-family: inherit;
+}
+
+input[type=submit]:hover{
+  opacity: 50%;
+}
+
+.error-msg{
+  color: red;
+  font-size: 12px;
+  padding: 5px;
+  display: block;
+}
+

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Academics</title>
+  <meta name="description" content="Dayanara's Academics">
+  <meta name="keywords" content="Dayanara Altamirano, Dayanara's Academics">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/grid_layout.css" rel="stylesheet" type="text/css" />   
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+  <link href="css/table.css" rel="stylesheet" type="text/css" />
+  <link href="css/menu.css" rel="stylesheet" type="text/css" />
+  <link href="css/accordion.css" rel="stylesheet" type="text/css" />
+  <link href="css/printstyle.css" rel="stylesheet" media="print" />
+  <script defer src="js/vue.js"></script>
+  <script defer src="js/main.js"></script>
+
+  <script src="js/script.js" defer></script>
+  <script src="js/accordion.js" defer></script>
+
+  <meta charset="UTF-8">
+</head>
+
+<body>
+  <div id="app">
+  <!-- Main Menu -->
+  <div class="row">
+    <div class="col-12">
+      <header>
+        <top-menu active-tab="academic"></top-menu>
+      </header>
+    </div>
+  </div>
+  <!-- End main menu -->
+
+
+<div class="wrapper">
+  <div class="row">
+      <div class="col-12">
+        <article>
+          <h1> Education  </h1>
+          <p> I have a Bachelors in <abbr title="Computer Information Systems">CIS</abbr> 
+            from the Polytechnic School of Ecuador, <a href="http://www.espol.edu.ec/" target="_blank">ESPOL</a>.
+          </p>
+          <p> I am currently pursuing my Masters in <abbr title="Computer Information Systems">CIS</abbr> at 
+            <a href="http://www.bu.edu/" target="_blank">Boston University</a>. I will graduate in the Summer of 2022.
+          </p>
+        
+          <!-- Academic Progress Table -->
+          <table class="pic-responsive">
+            <caption> Boston University MET CS Program - Courses Taken </caption>
+            <thead >
+              <tr>
+                <th class="column">  </th>
+                <th class="column" scope="col"> Course Number </th>
+                <th class="column" scope="col"> Course Name </th>
+                <th class="column" scope="col"> Grades </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="row last" scope="row" rowspan="4">Core Courses</th>  
+                <td>CS521</td>      
+                <td> Information Structures with Python </td>
+                <td> A </td>
+
+                </tr>
+                <tr>
+                  <td>CS546</td>      
+                  <td> Introduction to Probability and Statistics  </td>
+                  <td> A </td>
+                </tr>
+  
+                <tr>
+                <td>CS625</td>      
+                <td> Business Data Communication and Networks  </td>
+                <td> A </td>
+              </tr>
+              <tr>
+              <td>CS669</td>     
+              <td> Database Design and Implementation for Business  </td>
+              <td> A </td>
+            </tr>
+
+              <tr>
+                <th class="row" scope="row" rowspan="4">Electives</th>
+                <td>CS601</td>      
+                <td> Web Application Development </td>
+                <td> A </td>
+              </tr>
+              <tr>
+                <td>CS701</td>      
+                <td> Rich Internet Application Development </td>
+                <td> A </td>
+              </tr>   
+              <tr>
+                <td>CS602</td>      
+                <td> Server-Side Web Development </td>
+                <td> In Progress </td>
+              </tr>           
+            </tbody>
+            <tfoot>
+              <tr>
+                <td colspan="4">Cumulative Credits Earned : 16.0</td>
+              </tr>
+              <tr>
+                <td colspan="4">Cumulative Grade Point Average : 4.00</td>
+              </tr>
+            </tfoot>
+          </table>
+        </article>
+      </div>
+  </div>
+  <!-- End Academic Progress Table -->
+
+  <!-- Projects -->
+  <div class="row">
+    <div class="col-12">
+      <h1>Projects</h1>
+    </div>
+  </div>
+
+
+
+
+  <div class="row">
+    <div class="col-12">
+      <button class="accordion"><img src="images/icon-plus.png" alt="plus" > MET CS 521 Information Structures with Python</button>
+
+      <!-- First Panel -->
+      <div class="panel">
+        <div class="row">
+          <div class="col-12">
+            <p>This course presents an effective approach to learn Python. With extensive use of 
+              graphical illustrations, it will build understanding of Python and its capabilities by 
+              learning through examples and analogies.</p>
+
+              <p> My final project was a "Golf Scorecard App" developed in Python</p>
+              <a href="doc/daltamir_project_summary.pdf" target="_blank" ><img class="pic-pdf" src="images/pdf.png" alt="pdf file" title="Project Summary PDF"> Project Summary </a>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-6">
+            <figure id="video">
+              <!-- I got the iframe tag from kaltura which is where I had published this video-->
+              <iframe id="kaltura_player" 
+              src="https://cdnapisec.kaltura.com/p/2159741/sp/215974100/embedIframeJs/uiconf_id/45028821/partner_id/2159741?iframeembed=true&playerId=kaltura_player&entry_id=1_ud41dl7q&wid=1_agwt4k1z" 
+              allowfullscreen  
+              allow="autoplay *; fullscreen *; encrypted-media *" 
+              title="Kaltura Player"></iframe>
+              <figcaption>
+                <i>Golf Scorecard Project in Python</i> video
+              </figcaption>
+            </figure>
+          </div>
+        
+          <div class="col-6">
+              <figure>
+                  <img class="pic-medium-landscape" src="images/ScoreCardOutput.PNG" 
+                  alt="Golf Scorecard output" title="Golf Scorecard output"/>
+                  <figcaption><i>Golf Scorecard output </i></figcaption>
+                </figure>
+          </div>
+        </div>
+      </div>
+      <!-- End of 1st panel -->
+    
+   
+      <button class="accordion"><img src="images/icon-plus.png" alt="plus" > MET CS 601 Web Application Development</button>
+      <div class="panel">
+        <p>This course focuses on building core competencies in web design and development. 
+          It begins with a complete immersion into HTML essentially XHTML and Dynamic HTML 
+          (DHTML). Students are exposed to Cascading Style Sheets (CSS), as well as Dynamic CSS. 
+          The fundamentals of JavaScript language including object-oriented JavaScript is covered 
+          comprehensively. AJAX with XML and JSON are covered, as they are the primary means to transfer 
+          data from client and server</p>
+        <p>Below is a list of the different assignments I completed.</p>
+        <ul>
+          <li><a href="601Assignments/CS601_HW3_altamirano/calculator.html" target="_blank" >Simple JavaScript Calculator</a></li>
+          <li><a href="601Assignments/CS601_HW4_altamirano/myForm.html" target="_blank" >Form Validation &amp; Submission</a></li>
+          <li><a href="601Assignments/CS601_HW5_altamirano/index.html" target="_blank" >Using AJAX &amp; JSON</a></li>
+          <li><a href="601Assignments/CS601_HW6_altamirano/index.html" target="_blank" >Using Vue.js</a></li>
+        </ul>
+      </div>
+      
+      <button class="accordion"><img src="images/icon-plus.png" alt="plus" > MET CS 669 Database Design and Implementation for Business</button>
+      <div class="panel">
+        <p>In this course students learn the latest relational and object-relational tools and techniques for persistent 
+          data and object modeling and management. Students gain extensive hands- on experience using 
+          Oracle or Microsoft SQL Server as they learn the Structured Query Language (SQL) and design and 
+          implement databases. Students design and implement a database system as a term projec</p>
+
+        <p>My final project was the database design for an app that will automate the "Children&#39;s 
+          Ministry Check-in process" for each service at my church. I designed the database to support 
+          not only this type of event but any type of event that requires a check-in process. </p>
+
+        <p>If you would like to learn more about this project please click the link <a href="doc/CS669_TermProjectIteration5_DayanaraAltamirano.pdf" target="_blank" ><img class="pic-pdf" src="images/pdf.png" alt="pdf file" title="Project Summary PDF"> Project Summary </a></p>
+      </div>
+    </div>
+  </div>
+  <!-- End of Project -->  
+</div> <!-- End wrapper -->
+
+
+<!-- Footer -->
+<div class="row">
+<footer class="col-12">
+  <div>
+    &copy; Copyright 2020 Dayanara Altamirano
+  </div>
+  <div >
+    <a href="https://www.linkedin.com/in/dayanara-altamirano/" target="_blank">
+      <img class="pic-icon" src="images/In-White-48.png" alt="Facebook profile image" title="Facebook profile image"/>
+    </a>
+  </div>
+</footer>
+</div>
+<!-- Footer -->
+</div> <!-- End id=app -->
+
+
+</body>
+</html>

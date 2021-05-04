@@ -1,0 +1,28 @@
+{
+  "my_college_degrees" : [
+    {
+      "degree" : {
+        "school": "Polytechnic School of Ecuador - ESPOL",
+        "major": "System Analyst",
+        "type": "AA",
+        "year": 2000
+      }
+    },
+    {
+      "degree" : {
+        "school": "Polytechnic School of Ecuador - ESPOL",
+        "major": "Computer Information Systems",
+        "type": "BS",
+        "year": 2002
+      }
+    },
+    {
+      "degree" : {
+        "school": "Boston University",
+        "major": "Computer Information Systems",
+        "type": "MS",
+        "year": 2022
+      }
+    }
+  ]
+}

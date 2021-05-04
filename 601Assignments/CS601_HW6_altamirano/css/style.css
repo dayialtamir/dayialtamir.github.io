@@ -1,0 +1,58 @@
+body {
+    font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: white;
+}
+
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 3em;
+    color: teal;
+    font-weight: lighter;
+    border-bottom: 1px solid #cccccc;
+    margin: 10px;
+    padding: 10px;
+    text-shadow: 2px 2px 2px #444242;
+}
+
+.pic-large {
+    width: 275px;
+    height: 375px;
+}
+
+.pic-large:hover {
+    animation: fadeIn ease 1s;
+    cursor: pointer;
+}
+
+div.polaroid {
+    width: 275px;
+    height: 450px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: inline-block;
+    margin: 10px;
+}
+
+div.container {
+    text-align: center;
+    padding: 10px 20px;
+}
+
+.align-center {
+    text-align: center;
+}
+
+
+/* This animation is to make the second picture appear fading in */
+.fade-in {
+    animation: fadeIn ease 10s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

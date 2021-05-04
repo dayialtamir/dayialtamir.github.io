@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Gallery</title>
+  <meta name="description" content="Dayanara's Gallery">
+  <meta name="keywords" content="Dayanara Altamirano, Dayanara's Gallery">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/grid_layout.css" rel="stylesheet" type="text/css" />   
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+  <link href="css/slidepic.css" rel="stylesheet" type="text/css" />
+  <link href="css/menu.css" rel="stylesheet" type="text/css" />
+  <link href="css/printstyle.css" rel="stylesheet" media="print" />
+  <script defer src="js/vue.js"></script>
+  <script defer src="js/main.js"></script>
+  <script src="js/slide.js" defer></script>
+  <script src="js/script.js" defer></script>
+
+  <meta charset="UTF-8">
+</head>
+
+<body>
+  <div id="app">
+  <!-- Main Menu -->
+  <div class="row">
+  <div class="col-12">
+    <header>
+      <top-menu active-tab="gallery"></top-menu>
+    </header>
+  </div>
+  </div>
+  <!-- End main menu -->
+
+<!-- Main Content -->
+<div class="wrapper">
+  <div class="row">
+    <div class="col-12">
+      <h1>Gallery</h1>
+    </div>
+  </div>
+
+
+  <div class="row">
+    <!-- Slide -->
+    <div class="slideshow-container">
+
+    <template v-for="img in images">
+      <div class="slide">
+        <div class="numbertext">{{img.picNum}} / {{length}}</div>
+        <img :src="img.src" class="pic-slide pic-responsive" 
+        :alt="img.title" title="img.title" >
+        <div class="text">{{img.title}}</div>
+      </div>
+    </template>
+
+      <a class="prev" onclick="nextSlide(-1)">&#10094;</a>
+      <a class="next" onclick="nextSlide(1)">&#10095;</a>
+    </div>
+    <br>
+      
+    <div class="align-center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+      <span class="dot" onclick="currentSlide(4)"></span> 
+      <span class="dot" onclick="currentSlide(5)"></span> 
+      <span class="dot" onclick="currentSlide(6)"></span> 
+      <span class="dot" onclick="currentSlide(7)"></span> 
+      <span class="dot" onclick="currentSlide(8)"></span> 
+      <span class="dot" onclick="currentSlide(9)"></span> 
+      <span class="dot" onclick="currentSlide(10)"></span> 
+    </div>
+    <!-- End Slides -->
+  </div>
+</div> 
+<!-- End main content -->
+
+  <!-- Footer -->   
+  <div class="row">
+    <footer class="col-12">
+      <div>
+        &copy; Copyright 2020 Dayanara Altamirano
+      </div>
+      <div >
+        <a href="https://www.linkedin.com/in/dayanara-altamirano/" target="_blank">
+          <img class="pic-icon" src="images/In-White-48.png" alt="Facebook profile image" title="Facebook profile image"/>
+        </a>
+      </div>
+    </footer>
+  </div>
+<!-- Footer -->
+</div> <!-- End id=app-->
+</body>
+</html>

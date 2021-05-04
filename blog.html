@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Blog</title>
+  <meta name="description" content="Dayanara's Blog">
+  <meta name="keywords" content="Dayanara Altamirano, Dayanara's Blog">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/grid_layout.css" rel="stylesheet" type="text/css" />  
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+  <link href="css/printstyle.css" rel="stylesheet" media="print" />
+  <link href="css/menu.css" rel="stylesheet" type="text/css" />
+  <script defer src="js/vue.js"></script>
+  <script defer src="js/main.js"></script>
+  <script src="js/httpRequest.js" defer></script>
+  <script src="js/script.js" defer></script>
+  <script src="js/loadblog.js" defer></script>
+
+  <meta charset="UTF-8">
+</head>
+
+<body>
+  <div id="app">
+  <!-- Main Menu -->
+  <div class="row">
+    <div class="col-12">
+      <header>
+        <top-menu active-tab="blog"></top-menu>
+      </header>
+    </div>
+  </div>
+   <!-- End Main Menu -->
+
+  
+  <div class="wrapper">
+      <section id="display-content" class="row">
+        <!-- Pictures-->
+        <div class="col-4">
+          <div>
+            <figure class="polaroid rotate_right">
+              <img class="pic-small-landscape pic-responsive" src="images/ComputerScienceEssentials2018.JPG" 
+              alt="Computer Science Essentials class of 2018" title="Computer Science Essentials class of 2018" >
+              <figcaption>
+                Computer Science Essentials class of 2018
+              </figcaption>
+            </figure>
+          </div>
+          <div>
+            <figure class="polaroid rotate_left">
+              <img class="pic-small-landscape pic-responsive" src="images/FAUWomenEngineeringCS2019.jpg" 
+              alt="Dee and her students at the FAU Women in Engineering and Computer Science 2019 Event" 
+              title="Dee and her students at the FAU Women in Engineering and Computer Science 2019 Event"/>
+            <figcaption>
+              FAU Women in Engineering and Computer Science 2019 Event
+            </figcaption>
+            </figure>
+          </div>
+          <div>
+            <figure class="polaroid rotate_right">
+              <img class="pic-small-landscape pic-responsive" src="images/APStudent2019.jpg" 
+              alt="Dee and with her AP Computer Science Principles class of 2019" 
+              title="Dee and with her AP Computer Science Principles class of 2019"/>
+            <figcaption>
+              FAU Women in Engineering and Computer Science 2019 Event
+            </figcaption>
+            </figure>
+          </div>
+
+        </div>
+        <!-- End Pictures -->
+
+        <!-- Content -->
+        <div class="col-8">
+          <h1>Becoming a Teacher</h1>
+          <p>
+          In 2017, I made the decision to take a break from Software Development and follow the calling to become a <em>high school Computer Science Teacher</em>. 
+          Oh boy, it was a difficult decision to make, but I am glad I made it. This has been one of the most rewarding jobs 
+          I have ever had. I have met amazing people along the way, and today I have the privilege to be part of an
+          amazing faculty team at <a href="https://www.ccaeagles.org/" target="_blank">Calvary Christian Academy Fort Lauderdale</a>.
+        
+          <p>
+          Becoming a teacher has changed my life. I have learned to appreciate teachers even more (especially elementary teachers). 
+          Teachers not only prepare lesson plans, teach, and grade, but they are also counselors, psychologists, 
+          encouragers, and often, they become these kids' second parents.
+          </p>
+          <p>
+          I didn't think that I would be capable of caring for other kids the same way I care for my biological kids, 
+          but I do. It is incredible how much you worry about them. I worry when they do not get enough sleep, 
+          or if they haven't had breakfast, especially when they will be taking a test, or when they are struggling 
+          in school or when their family life is not going so well. However, they not only bring worry and work to 
+          your life, they also bring <em>joy</em>. Their success becomes yours. 
+          </p>
+          <p>
+          I still remember my first group of AP students. These kids were special. We were on this new adventure together. 
+          We worked hard throughout the school year. On the day of the exam, we got together to pray and once the test started 
+          I stayed outside waiting for an hour and thirty minutes just to be able to be the first one to hear from them 
+          how it went.  Their big smiles made me smile. Two months later we were notified that they all passed. I was so 
+          proud of them.
+          </p>
+          <p>
+          Although I truly enjoy being a teacher, on some days I do miss working as a developer. I hope soon I can be able to 
+          combine both and even be able to hire my students as programmers. 
+          </p>
+        </div>
+        <!-- End Content-->
+      </section>
+  </div>
+
+
+  <!-- Blog Thmbnails-->
+<div class="row blog-thumbnail">
+  <div class="col-6" >
+    <a id="blog1" href="becomingTeacher.html#wrapper">
+      <figure>
+        <img class="pic-small-landscape img-blog pic-responsive" src="images/AppDesign2018.jpg" alt="App Design class 0f 2018" title="App Design class 0f 2018">
+        <figcaption> 
+          <h4>Becoming a Teacher</h4>
+          <p></p>
+        </figcaption>
+      </figure>
+    </a>
+  </div>
+
+  <div class="col-6 blog-thumbnail">
+    <a id="blog2" href="Ecuador.html#wrapper">
+      <figure>
+        <img class="pic-small-landscape img-blog pic-responsive" src="images/Cuenca2017.jpg" alt="Ecuador" title="Cuenca, Ecuador">
+        <figcaption> 
+          <h4>Ecuador</h4>
+        </figcaption>
+      </figure>
+    </a>
+  </div>
+</div>
+<!-- End of Blog Thmbnail-->
+
+ 
+<!-- Footer -->
+<div class="row">
+  <footer class="col-12">
+    <div>
+      &copy; Copyright 2020 Dayanara Altamirano
+    </div>
+    <div >
+      <a href="https://www.linkedin.com/in/dayanara-altamirano/" target="_blank">
+        <img class="pic-icon" src="images/In-White-48.png" alt="Facebook profile image" title="Facebook profile image">
+      </a>
+    </div>
+  </footer>
+</div>
+<!-- End footer -->
+</div> <!-- End id=app -->
+</body>
+</html>

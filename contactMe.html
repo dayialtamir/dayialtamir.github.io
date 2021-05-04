@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Contact Me</title>
+  <meta name="description" content="Dayanara's Contact Information">
+  <meta name="keywords" content="Dayanara Altamirano, Dayanara's Contact Information">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/grid_layout.css" rel="stylesheet" type="text/css" /> 
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+  <link href="css/form.css" rel="stylesheet" type="text/css" />
+  <link href="css/menu.css" rel="stylesheet" type="text/css" />
+  <link href="css/printstyle.css" rel="stylesheet" media="print" />
+
+  <script defer src="js/vue.js"></script>
+  <script defer src="js/main.js"></script>
+
+
+  <script src="js/script.js" defer></script>
+
+  
+  <script src="js/validate.js" defer></script>
+  <script src="js/httpRequest.js" defer></script>  
+  <meta charset="UTF-8">
+</head>
+
+<body>
+  <div id="app">
+  <form name="myContactForm" id="myContactForm" novalidate>
+
+  <!-- Main Menu -->
+  <div class="row">
+    <div class="col-12">
+      <header>
+        <top-menu active-tab="contact"></top-menu>
+      </header>
+    </div>
+  </div>
+  <!-- End main menu -->
+
+<!-- Main Content -->
+ <div class="wrapper">
+  <div class="row">
+    <div class="col-12">
+      <h1>Contact Me</h1>
+    </div>
+  </div>
+  <div class="row">
+    <!-- Picture -->
+    <div class="col-4">
+        <figure>
+          <img class="pic-small-landscape pic-shadow-small pic-responsive" src="images/email-824310_640.jpg" alt="Contact" 
+          title="Contact"/>
+        </figure>  
+    </div>
+    <!-- End Picture-->
+
+    <!-- Contact Form -->
+    <div class="col-8">
+      <div class="full-size">
+      <section id="display-content">
+        <h3>Hi,</h3>
+        <div >
+          <p>If you would like to contact me you can </p>
+          <p><a class="email" href="mailto:daltamir@bu.edu?subject=Dayanara&#39;s%20Website%20&body=Hi%20Dayanara," target="_blank">
+            <img src="images/email.png" alt="Email" title="email" > email me directly</a></p>
+          <p> or fill out the form below </p>
+        </div>
+        <div>
+          <label for="firstName" class="label-form"> First Name * </label>
+          <input type="text" id="firstName" name="firstName" minlength="2" maxlength="30" autofocus
+          placeholder="Please enter your first name" pattern="^[a-zA-z]{2,}$" data-field="first name" 
+          required>
+        </div> 
+
+        <div class="inline-control">
+          <label for="lastName" class="label-form"> Last Name</label>
+          <input type="text" id="lastName" name="lastName" minlength="2" maxlength="30"
+          placeholder="Please enter your last name" pattern="^[a-zA-z]{2,}$" data-field="last name">        
+        </div>
+    
+        <div>
+          <label for="email" class="label-form"> Email * </label>
+          <input type="email" id="email" name="email" maxlength="150" required
+          placeholder="Please enter your email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" 
+          data-field="email">        
+        </div>
+
+        <div>
+          <label for="comments" class="label-form"> Comments (required) </label>
+          <textarea id="comments" name="comments" rows="5" cols="30" required data-field="comments"></textarea>   
+        </div>
+
+        <div>
+          <input type="submit" class="align-center" name="submit" id="submit" value="Submit" />
+        </div>
+
+        <br>
+        <br>
+      </section>
+      </div>
+    </div>
+    <!-- End Contact form -->
+    <br>
+    <br>
+
+  </div> <!-- End row -->
+ </div>
+ <!-- End Main Content -->
+
+ 
+
+ <!-- Footer -->   
+  <div class="row">
+    <footer class="col-12">
+      <div>
+        &copy; Copyright 2020 Dayanara Altamirano
+      </div>
+      <div >
+        <a href="https://www.linkedin.com/in/dayanara-altamirano/" target="_blank">
+          <img class="pic-icon" src="images/In-White-48.png" alt="Facebook profile image" title="Facebook profile image"/>
+        </a>
+      </div>
+    </footer>
+  </div>
+<!-- Footer -->
+
+</form>
+</div> <!-- End id=app -->
+</body>
+</html>

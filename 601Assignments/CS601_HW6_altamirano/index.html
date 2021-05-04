@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Dayanara's Home Page</title>
+    <meta name="description" content="My First Vue">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/grid_layout.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <script src="js/vue.js" defer></script>
+    <script src="js/main.js" defer></script>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <div id="app">
+        <div class="row">
+            <div class="col-12">
+                <h1>{{ title }}</h1>
+            </div>
+        </div>
+        <div class="row align-center">
+            <div class="col-12">
+                <template v-for="img in images">
+                  <div class="polaroid">
+                    <img :src="img.src" class="pic-large" :alt="img.title" 
+                    @mouseover="img.src = img.picB, img.title = img.titleB" 
+                    @mouseout="img.src = img.picA, img.title = img.titleA"
+                    @click="picDetail(img.detail)">
+                    <div class="container">
+                    <p>{{img.title}}</p>
+                    </div>
+                  </div>
+              </template>
+            </div>
+        </div>
+        <!-- End class row -->
+    </div>
+    <!-- End #app -->
+</body>

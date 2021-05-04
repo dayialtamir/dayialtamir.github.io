@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>My First Form</title>
+  <meta name="description" content="My first form">
+  <meta name="keywords" content="My first form">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/grid_layout.css" rel="stylesheet" type="text/css" />
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+  <script src="js/validate.js" defer></script>
+  <meta charset="UTF-8">
+</head>
+
+<body>
+  <form name="myForm" id="myForm" novalidate method="POST" action="https://bucs601.com/submit.php" >
+    <div class="row">
+      <div class="col-12">
+        <fieldset>
+          <legend> My First Form </legend>
+  
+          <div class="col-12">
+            <label for="firstName" class="label-form"> First Name (required) </label>
+            <input type="text" id="firstName" name="firstName" minlength="2" maxlength="30" autofocus
+            placeholder="Please enter your first name" pattern="^[a-zA-z]{2,}$" data-field="first name" required>
+          </div>
+
+          <div class="col-12">
+            <label for="lastName" class="label-form"> Last Name (required) </label>
+            <input type="text" id="lastName" name="lastName" minlength="2" maxlength="30"
+            placeholder="Please enter your last name" pattern="^[a-zA-z]{2,}$" data-field="last name" required>
+          </div>
+
+          <div class="col-12">
+            <label for="facilitator" class="label-form"> Facilitator  (required, e.g., Josh, Chris or Fazil) </label>
+            <input type="text" id="facilitator" name="facilitator" placeholder="Please enter your facilitator's name " 
+            pattern="([Jj][Oo][Ss][Hh]|[Ff][Aa][Zz][Ii][Ll]|[Cc][Hh][Rr][Ii][Ss])" data-field="facilitator" required>
+          </div>
+
+          <div class="col-12">
+            <label class="label-form"> Please select your marital status </label>
+            <div class="div-radio-check">
+            <input type="radio" name="maritalStatus" id="married" value="Married"><label for="married">Married</label>
+            </div>
+            <div class="div-radio-check">
+            <input type="radio" name="maritalStatus" id="single" value="Single"><label for="single" >Single</label>
+            </div>
+            <div class="div-radio-check">
+            <input type="radio" name="maritalStatus" id="divorced" value="Divorced"><label for="divorced">Divorced</label>
+            </div>
+            <div class="div-radio-check">
+            <input type="radio" name="maritalStatus" id="widowed" value="Widowed"><label for="widowed">Widowed</label>
+            </div>
+          </div>
+
+          <div class="col-12">
+            <label class="label-form"> Please select you favorite social media </label>
+            <div class="div-radio-check">
+            <input type="checkbox" name="socialMedia" id="facebook" value="facebook"><label for="facebook">Facebook</label>
+            </div>
+            <div class="div-radio-check">
+            <input type="checkbox" name="socialMedia" id="instagram" value="instagram"><label for="instagram">Instagram</label>
+            </div>
+            <div class="div-radio-check">
+            <input type="checkbox" name="socialMedia" id="linkedin" value="linkedin"><label for="linkedin">LinkedIn</label>
+            </div>
+          </div>
+
+          <div class="col-12">
+            <input type="submit" name="submit" id="submit" value="Submit" />
+          </div>
+
+        </fieldset>
+      </div>
+    </div>
+   
+  </form>
+
+</body>

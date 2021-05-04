@@ -1,0 +1,79 @@
+
+input[type=text],
+input[type=email]
+{
+  width:60%;
+  border-radius: 5px;
+  padding: 5px 5px 5px 5px;
+  border: 1px solid #dcdcdc;
+}
+
+.full-size{
+  height:700px;
+}
+
+textarea{
+  width: 60%;
+  font-family: inherit;
+}
+
+textarea:focus{
+  background-color:rgb(72, 72, 110,20%);
+}
+
+
+.label-form{
+  display: block;
+  min-width:250px;
+  font-size: 12px;
+  font-weight: bold;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  
+}
+
+.inline-control{
+  display: inline;
+}
+
+
+.div-radio-check{
+  padding-top: 10px;
+  font-size: 12px;
+}
+  
+input[type=text]:focus{
+background-color:rgb(72, 72, 110,20%);
+}
+
+input[type=email]:focus{
+  background-color:rgb(72, 72, 110,20%);
+}
+
+input[type=submit]{
+  width: 60%;
+  color: white;
+  /*border-radius: 10px;*/
+  background-color:rgb(72, 72, 110);
+  padding: 10px;
+  font-family: inherit;
+}
+
+input[type=submit]:hover{
+  opacity: 50%;
+}
+
+.error-msg{
+  color: red;
+  font-size: 12px;
+  padding: 5px;
+  display: block;
+}
+
+@media screen and (max-width: 600px) {
+  textarea, input[type=text], input[type=submit], input[type=email] {
+    width: 100%;
+    margin-top: 0;
+  }
+
+
