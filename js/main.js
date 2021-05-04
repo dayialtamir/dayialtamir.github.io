@@ -12,6 +12,7 @@ Vue.component('top-menu', {
     <a href="./blog.html" :class="{active: activeTab === 'blog'}">Blog</a>
     <a href="./gallery.html" :class="{active: activeTab === 'gallery'}">Gallery</a>
     <a href="./contactMe.html" :class="{active: activeTab === 'contact'}">Contact</a>
+    <a href="./TripPlanner/index.html"  :class="{active: activeTab === 'tripplanner'}">My Trip Planner</a>
     <a href="javascript:void(0);" class="icon" onclick="myMenuFunction()">
     <div class="hamburger-bars"></div>
     <div class="hamburger-bars"></div>
